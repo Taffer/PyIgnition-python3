@@ -47,14 +47,14 @@ def InterpolateKeyframes(curframe, variables, keyframes):
 	if not ('interpolationtype' in variables):
 		variables['interpolationtype'] = INTERPOLATIONTYPE_LINEAR
 	
-	keys = variables.keys()
+	keys = list(variables.keys())
 	
-	for i in xrange(len(keys)):  # Determine current keyframe and next one for this variable
+	for i in range(len(keys)):  # Determine current keyframe and next one for this variable
 		key = keys[i]
 		curkeyframe = None
 		nextkeyframe = None
 		
-		for i in xrange(len(keyframes)):
+		for i in range(len(keyframes)):
 			try:
 				frame = keyframes[i]
 				if (frame.variables[key] != None):  # If the current keyframe has a keyed value for the current variable

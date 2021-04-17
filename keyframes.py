@@ -12,12 +12,12 @@ def CreateKeyframe(parentframes, frame, variables):
 	
 	# Look for duplicate keyframes and copy other defined variables
 	try:
-		oldkey = (keyframe for keyframe in parentframes if keyframe.frame == frame).next()
+		oldkey = next((keyframe for keyframe in parentframes if keyframe.frame == frame))
 	except StopIteration:
 		oldkey = None
 	
 	if oldkey != None:
-		for var in oldkey.variables.keys():  # For every variable defined by the old keyframe
+		for var in list(oldkey.variables.keys()):  # For every variable defined by the old keyframe
 			if (var not in newframe.variables or newframe.variables[var] == None) and (oldkey.variables[var] != None):  # If a variable is undefined, copy its value to the new keyframe
 				newframe.variables[var] = oldkey.variables[var]
 	

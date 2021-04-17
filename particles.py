@@ -171,7 +171,7 @@ class ParticleSource:
 		else:  # Otherwise, interpolate the particle variables for each frame of its life
 			particlelife = self.particlelife
 		
-		for i in xrange(0, particlelife + 1):
+		for i in range(0, particlelife + 1):
 			vars = interpolate.InterpolateKeyframes(i, {'colour_r':0, 'colour_g':0, 'colour_b':0, 'radius':0, 'length':0}, self.particlekeyframes)
 			self.particlecache.append(vars)
 	

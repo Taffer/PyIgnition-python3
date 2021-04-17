@@ -148,8 +148,8 @@ class VortexGravity(PointGravity):
 		try:
 			self.alreadyshownerror
 		except:
-			print "WARNING: VortexGravity relies upon particle velocities as well as positions, and so its \
-				force can only be obtained using GetForceOnParticle([PyIgnition particle object]).".replace("\t", "")
+			print("WARNING: VortexGravity relies upon particle velocities as well as positions, and so its \
+				force can only be obtained using GetForceOnParticle([PyIgnition particle object]).".replace("\t", ""))
 			self.alreadyshownerror = True
 		
 		return [0.0, 0.0]

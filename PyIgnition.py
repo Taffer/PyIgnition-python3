@@ -211,7 +211,7 @@ class ParticleEffect:
 				outfile.write("\t\t\t<keyframe frame = \"%i\">\n" % keyframe.frame)
 				
 				# Write out keyframed variables
-				for variable in keyframe.variables.keys():
+				for variable in list(keyframe.variables.keys()):
 					if variable == "interpolationtype":
 						outfile.write("\t\t\t\t<%s>%s</%s>\n" % (variable, self.GetInterpolationtypeAsString(keyframe.variables[variable]), variable))
 					else:
@@ -231,7 +231,7 @@ class ParticleEffect:
 				outfile.write("\t\t\t<keyframe frame = \"%i\">\n" % keyframe.frame)
 				
 				# Write out keyframed variables
-				for variable in keyframe.variables.keys():
+				for variable in list(keyframe.variables.keys()):
 					if variable == "interpolationtype":
 						outfile.write("\t\t\t\t<%s>%s</%s>\n" % (variable, self.GetInterpolationtypeAsString(keyframe.variables[variable]), variable))
 					else:
@@ -268,7 +268,7 @@ class ParticleEffect:
 				outfile.write("\t\t\t<keyframe frame = \"%i\">\n" % keyframe.frame)
 				
 				# Write out keyframed variables
-				for variable in keyframe.variables.keys():
+				for variable in list(keyframe.variables.keys()):
 					if variable == "interpolationtype":
 						outfile.write("\t\t\t\t<%s>%s</%s>\n" % (variable, self.GetInterpolationtypeAsString(keyframe.variables[variable]), variable))
 					else:
@@ -309,7 +309,7 @@ class ParticleEffect:
 				outfile.write("\t\t\t<keyframe frame = \"%i\">\n" % keyframe.frame)
 				
 				# Write out keyframed variables
-				for variable in keyframe.variables.keys():
+				for variable in list(keyframe.variables.keys()):
 					if variable == "interpolationtype":
 						outfile.write("\t\t\t\t<%s>%s</%s>\n" % (variable, self.GetInterpolationtypeAsString(keyframe.variables[variable]), variable))
 					else:
