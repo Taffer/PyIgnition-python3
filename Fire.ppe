@@ -21,35 +21,35 @@
 		<particlekeyframes>
 			<keyframe frame = "10">
 				<colour_r>200</colour_r>
+				<colour_g>50</colour_g>
+				<colour_b>20</colour_b>
+				<radius>4.0</radius>
 				<length>None</length>
 				<interpolationtype>linear</interpolationtype>
-				<radius>4.0</radius>
-				<colour_b>20</colour_b>
-				<colour_g>50</colour_g>
 			</keyframe>
 			<keyframe frame = "30">
 				<colour_r>150</colour_r>
+				<colour_g>0</colour_g>
+				<colour_b>0</colour_b>
+				<radius>6.0</radius>
 				<length>None</length>
 				<interpolationtype>linear</interpolationtype>
-				<radius>6.0</radius>
-				<colour_b>0</colour_b>
-				<colour_g>0</colour_g>
 			</keyframe>
 			<keyframe frame = "60">
 				<colour_r>50</colour_r>
+				<colour_g>20</colour_g>
+				<colour_b>20</colour_b>
+				<radius>20.0</radius>
 				<length>None</length>
 				<interpolationtype>linear</interpolationtype>
-				<radius>20.0</radius>
-				<colour_b>20</colour_b>
-				<colour_g>20</colour_g>
 			</keyframe>
 			<keyframe frame = "80">
 				<colour_r>0</colour_r>
+				<colour_g>0</colour_g>
+				<colour_b>0</colour_b>
+				<radius>50.0</radius>
 				<length>None</length>
 				<interpolationtype>linear</interpolationtype>
-				<radius>50.0</radius>
-				<colour_b>0</colour_b>
-				<colour_g>0</colour_g>
 			</keyframe>
 		</particlekeyframes>
 	</source>
@@ -78,15 +78,15 @@
 		<height>20</height>
 		<keyframes>
 			<keyframe frame = "500">
-				<width>200</width>
 				<pos_x>400</pos_x>
 				<pos_y>250</pos_y>
-				<bounce>None</bounce>
-				<colour_b>None</colour_b>
-				<interpolationtype>linear</interpolationtype>
 				<colour_r>None</colour_r>
 				<colour_g>None</colour_g>
+				<colour_b>None</colour_b>
+				<bounce>None</bounce>
+				<width>200</width>
 				<height>30</height>
+				<interpolationtype>linear</interpolationtype>
 			</keyframe>
 		</keyframes>
 	</rectangle>

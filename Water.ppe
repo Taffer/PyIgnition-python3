@@ -1,5 +1,5 @@
 <?xml version = "1.0"?>
-<?pyignition version = "1.0"?>
+<?pyignition version = "1.000000"?>
 
 <effect>
 	<source>
@@ -21,19 +21,19 @@
 		<particlekeyframes>
 			<keyframe frame = "60">
 				<colour_r>100</colour_r>
+				<colour_g>100</colour_g>
+				<colour_b>250</colour_b>
+				<radius>10.0</radius>
 				<length>None</length>
 				<interpolationtype>linear</interpolationtype>
-				<radius>10.0</radius>
-				<colour_b>250</colour_b>
-				<colour_g>100</colour_g>
 			</keyframe>
 			<keyframe frame = "80">
 				<colour_r>255</colour_r>
+				<colour_g>255</colour_g>
+				<colour_b>255</colour_b>
+				<radius>20.0</radius>
 				<length>None</length>
 				<interpolationtype>linear</interpolationtype>
-				<radius>20.0</radius>
-				<colour_b>255</colour_b>
-				<colour_g>255</colour_g>
 			</keyframe>
 		</particlekeyframes>
 	</source>
@@ -64,22 +64,22 @@
 			<keyframe frame = "250">
 				<pos_x>400</pos_x>
 				<pos_y>500</pos_y>
-				<radius>None</radius>
-				<bounce>None</bounce>
-				<colour_b>None</colour_b>
-				<interpolationtype>cosine</interpolationtype>
 				<colour_r>None</colour_r>
 				<colour_g>None</colour_g>
+				<colour_b>None</colour_b>
+				<bounce>None</bounce>
+				<radius>None</radius>
+				<interpolationtype>cosine</interpolationtype>
 			</keyframe>
 			<keyframe frame = "300">
 				<pos_x>None</pos_x>
 				<pos_y>None</pos_y>
-				<radius>None</radius>
-				<bounce>None</bounce>
-				<colour_b>50</colour_b>
-				<interpolationtype>linear</interpolationtype>
 				<colour_r>0</colour_r>
 				<colour_g>255</colour_g>
+				<colour_b>50</colour_b>
+				<bounce>None</bounce>
+				<radius>None</radius>
+				<interpolationtype>linear</interpolationtype>
 			</keyframe>
 		</keyframes>
 	</circle>
@@ -102,22 +102,22 @@
 			<keyframe frame = "200">
 				<pos_x>500</pos_x>
 				<pos_y>250</pos_y>
-				<radius>None</radius>
-				<bounce>None</bounce>
-				<colour_b>None</colour_b>
-				<interpolationtype>linear</interpolationtype>
 				<colour_r>None</colour_r>
 				<colour_g>None</colour_g>
+				<colour_b>None</colour_b>
+				<bounce>None</bounce>
+				<radius>None</radius>
+				<interpolationtype>linear</interpolationtype>
 			</keyframe>
 			<keyframe frame = "230">
 				<pos_x>100</pos_x>
 				<pos_y>300</pos_y>
-				<radius>None</radius>
-				<bounce>None</bounce>
-				<colour_b>None</colour_b>
-				<interpolationtype>cosine</interpolationtype>
 				<colour_r>None</colour_r>
 				<colour_g>None</colour_g>
+				<colour_b>None</colour_b>
+				<bounce>None</bounce>
+				<radius>None</radius>
+				<interpolationtype>cosine</interpolationtype>
 			</keyframe>
 		</keyframes>
 	</circle>
@@ -139,26 +139,26 @@
 		<height>100</height>
 		<keyframes>
 			<keyframe frame = "200">
-				<width>400.0</width>
 				<pos_x>400</pos_x>
 				<pos_y>100</pos_y>
-				<bounce>None</bounce>
-				<colour_b>None</colour_b>
-				<interpolationtype>cosine</interpolationtype>
 				<colour_r>None</colour_r>
 				<colour_g>None</colour_g>
+				<colour_b>None</colour_b>
+				<bounce>None</bounce>
+				<width>400.0</width>
 				<height>None</height>
+				<interpolationtype>cosine</interpolationtype>
 			</keyframe>
 			<keyframe frame = "300">
-				<width>None</width>
 				<pos_x>None</pos_x>
 				<pos_y>None</pos_y>
-				<bounce>None</bounce>
-				<colour_b>0</colour_b>
-				<interpolationtype>linear</interpolationtype>
 				<colour_r>255</colour_r>
 				<colour_g>0</colour_g>
+				<colour_b>0</colour_b>
+				<bounce>None</bounce>
+				<width>None</width>
 				<height>None</height>
+				<interpolationtype>linear</interpolationtype>
 			</keyframe>
 		</keyframes>
 	</rectangle>
@@ -172,24 +172,24 @@
 			<keyframe frame = "300">
 				<pos_x>None</pos_x>
 				<pos_y>None</pos_y>
-				<normal_x>-0.894427191</normal_x>
-				<bounce>None</bounce>
-				<colour_b>None</colour_b>
-				<interpolationtype>linear</interpolationtype>
 				<colour_r>None</colour_r>
 				<colour_g>None</colour_g>
-				<normal_y>-0.4472135955</normal_y>
+				<colour_b>None</colour_b>
+				<bounce>None</bounce>
+				<normal_x>-0.8944271909999159</normal_x>
+				<normal_y>-0.4472135954999579</normal_y>
+				<interpolationtype>linear</interpolationtype>
 			</keyframe>
 			<keyframe frame = "500">
 				<pos_x>None</pos_x>
 				<pos_y>None</pos_y>
-				<normal_x>-1</normal_x>
-				<bounce>None</bounce>
-				<colour_b>None</colour_b>
-				<interpolationtype>linear</interpolationtype>
 				<colour_r>None</colour_r>
 				<colour_g>None</colour_g>
+				<colour_b>None</colour_b>
+				<bounce>None</bounce>
+				<normal_x>-1</normal_x>
 				<normal_y>0</normal_y>
+				<interpolationtype>linear</interpolationtype>
 			</keyframe>
 		</keyframes>
 	</boundaryline>

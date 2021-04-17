@@ -1,6 +1,6 @@
-### EXESOFT PYIGNITION ###
+# EXESOFT PYIGNITION
 # Copyright David Barker 2010
-# 
+#
 # Global constants module
 
 

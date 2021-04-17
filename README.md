@@ -12,6 +12,11 @@ please refer all bug reports, feature requests, etc. to the
 [PyIgnition](https://launchpad.net/pyignition) page on Launchpad. Note that it
 doesn't seem to have been touched since 2010 though.
 
+Note that I use a maximum width of 132 characters (80 characters for block
+comments) with `flake8` in memory of ancient mainframe terminals. I've left
+inline comments going over 80 characters but reformatted the code to comply
+with normal `flake8` settings.
+
 # License
 
 This code continues to be released under the absurdly long [GNU GPL v3](LICENSE)

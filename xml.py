@@ -1,8 +1,7 @@
-### EXESOFT XML PARSER ###
+# EXESOFT XML PARSER
 # Coopyright David Barker 2010
 #
 # Python XML parser
-
 
 
 class XMLNode:
@@ -28,11 +27,12 @@ class XMLParser:
             startindex = index + 2  # Start of tag inside
             endindex = self.data.find("?>", index)  # Tag end
 
-            # Get the contents of the angular brackets and split into separate meta tags
+            # Get the contents of the angular brackets and split into separate
+            # meta tags
             metaraw = self.data[startindex:endindex].strip()
             separated = metaraw.split("\" ")  # Split like so ('|' = split off):
             # thingy = "value|" |other = "whatever|" |third = "woo!"
-            
+
             for splitraw in separated:
                 split = splitraw.split("=")
 
@@ -46,7 +46,7 @@ class XMLParser:
 
     def GetTagMeta(self, tag):
         meta = {}
-        
+
         metastart = tag.find(" ") + 1
         metaraw = tag[metastart:]
         separated = metaraw.split("\" ")  # Split like so ('|' = split off):
@@ -79,26 +79,27 @@ class XMLParser:
         rootstart = self.data.find("<")
         rootstartclose = self.data.find(">", rootstart)
         roottagraw = self.data[(rootstart + 1):rootstartclose]
-        
+
         rootmeta = {}
         if len(roottagraw.split("=")) > 1:
             rootmeta = self.GetTagMeta(roottagraw)
-        
+
         roottag = roottagraw.strip()
-        
+
         rootend = self.data.find("</%s" % roottag)
         rootendclose = self.data.find(">", rootend)
         rootdata = self.data[rootstart:(rootendclose + 1)].strip()
         rootinside = self.data[(rootstartclose + 1):rootend]
 
-        self.root = XMLNode(parent = None, tag = roottag, meta = rootmeta, data = rootdata, inside = rootinside)
+        self.root = XMLNode(parent=None, tag=roottag, meta=rootmeta,
+                            data=rootdata, inside=rootinside)
 
     def SearchNode(self, node):
         node.parsed = True
-        
+
         tempdata = node.inside
         children = []
-        
+
         while "<" in tempdata:
             start = tempdata.find("<")
             startclose = tempdata.find(">", start)
@@ -133,5 +134,5 @@ class XMLParser:
         self.StripXML()
         self.GetRoot()
         self.SearchNode(self.root)
-        
+
         return self.root
