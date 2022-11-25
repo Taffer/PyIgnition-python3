@@ -1,3 +1,11 @@
+# Moved
+
+This repo is has been replaced by: https://codeberg.org/Taffer/PyIgnition-python3
+
+![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
+
+Everything in this repo should be considered out of date.
+
 # PyIgnition-python3
 
 A quick and dirty port of [PyIgnition](https://launchpad.net/pyignition) to
